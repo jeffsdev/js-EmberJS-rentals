@@ -1,5 +1,5 @@
 {{#if addNewRental}}
-    <h1>New Rental</h1>
+  <h1>New Rental</h1>
     <div>
       <form>
         <div class="form-group">
@@ -13,11 +13,6 @@
         </div>
 
         <div class="form-group">
-          <label for="city">City</label>
-          {{input value=city id="city"}}
-        </div>
-
-        <div class="form-group">
           <label for="bedrooms">Number of Bedrooms</label>
           {{input value=bedrooms id="bedrooms"}}
         </div>
@@ -27,9 +22,9 @@
           {{input value=image id="image"}}
         </div>
 
-        <button {{action 'save1'}}>Save</button>
+        <button {{action 'saveRental'}}>Save</button>
       </form>
     </div>
-  {{else}}
+{{else}}
     <button {{action 'rentalFormShow'}}>New Rental</button>
 {{/if}}
